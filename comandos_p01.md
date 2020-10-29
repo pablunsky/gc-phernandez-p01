@@ -75,3 +75,16 @@ head -1 splike_x.faa
 **Respuesta 4:**
 
 cat splike_a.faa > cat splike_b.faa > cat splike_c.faa > glycoproteins.faa
+
+**Respuesta 5:**
+
+Los enlaces simbolicos han desaparecido.
+
+**Respuesta 6:**
+
+head -3 sarscov2_genome.fasta
+zless sarscov2_assembly.fasta.gz | head -3 -
+
+La diferencia es que el genoma es mas largo porque representa el total, mientras que el assembly solo es un gen especifico.
+
+
