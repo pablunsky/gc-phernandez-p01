@@ -87,4 +87,29 @@ zless sarscov2_assembly.fasta.gz | head -3 -
 
 La diferencia es que el genoma es mas largo porque representa el total, mientras que el assembly solo es un gen especifico.
 
+**Respuesta 7:**
 
+cat sarscov2_genome.fasta | grep -c '>' -
+zless sarscov2_assembly.fasta.gz | grep -c '>' -
+
+**Respuesta 8:**
+
+zless SRR10971381_R2.fastq.gz | head -12 -
+zless SRR10971381_R2.fastq.gz | grep -c '+' -
+
+**Respuesta 9:**
+
+El formato "fasta" corresponde a secuencias ADN.
+El formato "faa" corresponde a aminoacidos.
+El formato "fastq" corresponde a genes.
+
+**Respuesta 10:**
+
+Permite visualizar los datos como una tabla ordenada.
+
+**Respuesta 11:**
+
+less -S --pattern=gene sarscov2_genome.gff3
+cat sarscov2_genome.gff3 | grep -c 'gene' -
+
+La diferencia entre "gene" y "CDS" es que "CDS" corresponde a codones, y "gene" a genes.
